@@ -9,3 +9,7 @@ Con el fin de adaptar la dimensión del trabajo a los recursos disponibles, se h
 Conforme al marco dado por la Ley provincial Nº 8912/76, la ordenanza debe estar basada en la definición de una _**zonificación del área urbana**_ y la _**definición de parámetros para la división, ocupación y uso del suelo**_. En otras palabras, propone formular el Ordenamiento del Territorio a través de la definición de zonas de acuerdo a su uso (urbana, suburbana, industrial y rural), y los parámetros de ocupación de las mismas.
 
 Para lograr el objetivo planteado, es necesario realizar un amplio diagnóstico urbanístico basado en la observación de parámetros y fenómenos de orden ambiental, económico y social.
+
+[Siguiente capítulo][sig].
+
+[sig]: desarrollo.md
