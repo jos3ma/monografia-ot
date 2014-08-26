@@ -21,3 +21,7 @@ Esta norma define una metodología para el Ordenamiento Territorial basada en lo
 El uso indiscriminado, la sobre explotación de los recursos naturales, en particular aquellos no renovables, todos los cuales provienen de la Tierra, la convierten en un recurso cada vez más crítico y delicado. Así la Ordenación del Territorio se vuelve un proceso cada vez más complejo en el que se acentúa la necesidad de un tratamiento multidisciplinario. El Ingeniero Agrimensor estudia el territorio desde una perspectiva espacial, geométrica, pero también desde un amplio espectro de ciencias y disciplinas vinculadas con la Tierra, por lo que podemos afirmar que es un profesional que cuenta con una visión integral del Territorio, condición ideal para ocupar un papel protagónico en el Ordenamiento Territorial. En  otras palabras, las posibilidades de actuación profesional para el Agrimensor en el ámbito del Ordenamiento Territorial no se reducen al conocimiento físico del espacio geográfico, sino también a la aplicación de criterios racionales y sustentables para la elaboración del Ordenamiento Territorial.
 
 Como aplicación de los conceptos estudiados, presentamos este trabajo, en el que se repasa el proceso de desarrollo de normas para el Ordenamiento Territorial en función de los objetivos particulares planteados a continuación.
+
+[Siguiente capítulo][sig].
+
+[sig]: objetivos.md
