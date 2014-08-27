@@ -10,6 +10,8 @@ Conforme al marco dado por la Ley provincial Nº 8912/76, la ordenanza debe esta
 
 Para lograr el objetivo planteado, es necesario realizar un amplio diagnóstico urbanístico basado en la observación de parámetros y fenómenos de orden ambiental, económico y social.
 
-[Siguiente capítulo][sig].
+[Anterior capítulo][ant] - [Top][top] - [Siguiente capítulo][sig].
 
+[ant]: intro.md
+[top]: #objetivos
 [sig]: desarrollo.md
