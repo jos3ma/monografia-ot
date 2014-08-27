@@ -22,6 +22,8 @@ El uso indiscriminado, la sobre explotación de los recursos naturales, en parti
 
 Como aplicación de los conceptos estudiados, presentamos este trabajo, en el que se repasa el proceso de desarrollo de normas para el Ordenamiento Territorial en función de los objetivos particulares planteados a continuación.
 
-[Siguiente capítulo][sig].
+[Anterior capítulo][ant] - [Top][top] - [Siguiente capítulo][sig].
 
+[ant]: README.md
+[top]: #introducción
 [sig]: objetivos.md
