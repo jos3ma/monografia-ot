@@ -14,4 +14,4 @@ Para lograr el objetivo planteado, es necesario realizar un amplio diagnóstico 
 
 [ant]: intro.md
 [top]: #objetivos
-[sig]: desarrollo.md
+[sig]: desarrollo.rst
