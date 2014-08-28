@@ -20,19 +20,32 @@ Según la Constitución de la Provincia de Buenos Aires, la administración de l
 
 A continuación se muestra una síntesis de las características del Partido de Baradero:
 
-* Superficie:	1533 km²
+
+* Superficie: 1533 km²
+
 * Perímetro: 220 km
+
 * Extensión:
-    * 59º 46' - 59º 10' Oeste
-    * 34º 10' - 33º 39' Sur
+
+  * 59º 46' - 59º 10' Oeste
+
+  * 34º 10' - 33º 39' Sur
+
 * Población del partido: 29.562 habitantes
+
 * Distribución demográfica:
-    * Población rural: 2.859 hab.
-    * Población urbana:	26.703 hab.
-        * Baradero: 24.901 hab.
-        * Villas Alsina: 1.184 hab.
-        * Portela: 449 hab.
-        * Santa Coloma: 169 hab.
+
+  * Población rural: 2.859 hab.
+
+  * Población urbana: 26.703 hab.
+
+    * Baradero: 24.901 hab.
+
+    * Villas Alsina: 1.184 hab.
+
+    * Portela: 449 hab.
+
+    * Santa Coloma: 169 hab.
 
 .. _baradero-ubic:
 
