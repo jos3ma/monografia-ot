@@ -4,8 +4,11 @@ Desarrollo
 Para el desarrollo del trabajo se han tomado como referencia las siguientes fases metodológicas:
 
 * `Caracterización <#caracterización>`_: en esta fase se caracteriza la situación y el contexto geográfico, se realiza una revisión histórica, un análisis socio-económico, y se detalla el estado actual de la división y el uso del suelo.
+
 * `Diagnóstico <#diagnóstico>`_: comprende un análisis de los datos e información obtenidos en la fase anterior, tendiente a comprender los procesos de desarrollo y transformación, y las interrelaciones que actúan en el territorio de la ciudad y su entorno, y las fuerzas que operan los mismos.
+
 * `Propuesta de solución <#propuesta-de-solución>`_: aborda el problema de elaboración de la "Ordenanza de Usos y División del suelo".
+
 * `Anexos <#anexos>`_: incluye información detallada del marco cartográfico utilizado y los prácticos *"Territorio y Ambiente"* y *"Zonificación tipo para una manzana urbana"*.
 
 Caracterización
@@ -72,8 +75,11 @@ Límites
 Los límites del Partido de Baradero son (ilustración `2 <#baradero-limit>`_):
 
 * Al **Oeste** con el Partido de San Pedro, río Arrecifes mediante, y con el Partido de Capitán Sarmiento, en parte con el arroyo Cahuané mediante.
+
 * Al **Sur** con el Partido de San Antonio de Areco, en parte con el arroyo Doblado mediante.
+
 * Al **Este** con el Partido de Zárate, en parte con el río Areco mediante, y en parte con el río Paraná de las Palmas.
+
 * Al **Norte** limita con los departamentos Gualeguay e Islas del Ibicuy, pertenecientes a la Provincia de Entre Ríos, río Paraná Guazú mediante.
 
 Características geográficas
@@ -97,9 +103,13 @@ Conquista y colonización
 """"""""""""""""""""""""
 
 Con la llegada de los conquistadores, a principios del siglo XVI, se sucedieron crueles y sangrientas batallas, en particular contra los Guaníes y Albeguay, que se resistían obstinadamente al dominio del conquistador. La tribu de los Querandíes también fueron diezmados y perseguidos sin reparo, y finalmente abandonaron sus tolderías y se fueron retirando durante 50 años rumbo al sur, hasta la Sierra de “El Volcán” (Sierras de Tandil).
+
 Mientras se daba este éxodo aborigen, desde las riberas del Paraná los “Alarifes” de Don Juan de Garay, tiempo antes de la fundación de la ciudad de Buenos Aires en 1580, comenzaron a deslindar la margen izquierda desde la desembocadura hasta poco más del Río de los Querandíes (actualmente conocido como río Arrecifes).
+
 En el comienzo de la actividad conquistadora y colonizadora del hombre blanco, la zona comprendida por el Partido de Baradero, era conocida como Pago de los Arrecifes, un área de límites fluidos e indefinidos. Los procesos más destacados de aquella época fueron la búsqueda de los caminos a Córdoba y a Santa Fe, la lucha contra el indio, y la codicia del hombre blanco por la tierra.
+
 El Pago de los Arrecifes comprendía porción de los actuales partidos de San Pedro, Baradero, Salto, Carmen de Areco, San Antonio de Areco, Pergamino, y Arrecifes. Estos lugares estaban vinculados desde Buenos Aires por los caminos a Córdoba y Santa Fe, que actualmente se corresponden con las rutas N° 8 y N° 9 respectivamente.
+
 La primera constancia que se conoce sobre el establecimiento humano en este Pago, es el título otorgado el 14 de mayo de 1594 por el gobernador Hernando de Zárate a Andrés Ximénez de Fuentes. Según la merced, quedarían comprendidos en la actualidad la mitad sur del partido de San Pedro, sector norte, centro, noroeste de Arrecifes y parte de islas pertenecientes a San Pedro y Baradero.
 
 Fundación de Baradero (VER)
@@ -176,7 +186,6 @@ Ya habían llegado los primeros colonos con sus respectivas familias, quienes fu
 La existencia de esta estación ferroviaria, alentó en muchos pobladores la idea de formalizar un porvenir venturoso, dada la ventajosa ubicación geográfica en que se encontraba y rodeada de abundantes campos fértiles.
 
 ..
-  
   ## Actualidad de Baradero
   ### Situación Demográfica
   ### Situación económica
