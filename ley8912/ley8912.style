@@ -1,0 +1,41 @@
+{
+  "pageSetup" : {
+    "firstTemplate": "coverPage",
+    "alignment": "TA_JUSTIFY",
+    "hyphenation": true,
+    "language": "es_ES"
+  },
+  "pageTemplates" : {
+    "coverPage": {
+        "frames": [
+            ["0cm", "0cm", "100%", "100%"]
+          ],
+        "showHeader" : false,
+        "showFooter" : false
+    }
+  },
+  "styles" : [
+    ["thin" , {
+    "parent" : "bodytext",
+    "width" : "65%",
+    "alignment": "TA_JUSTIFY",
+    "hyphenation": true,
+    "language": "es_ES"
+    }
+    ],
+    ["right", {
+        "parent": "bodytext",
+        "alignment": "right"
+    }],
+    ["centered", {
+        "parent": "bodytext",
+        "alignment": "center"
+    }],
+    ["headertable" , {
+    "parent" : "table",
+    "colWidths": ["20%","60%","20%"],
+    "commands": []
+    }
+    ]
+   ]
+}
