@@ -3,13 +3,13 @@ Desarrollo
 
 Para el desarrollo del trabajo se han tomado como referencia las siguientes fases metodológicas:
 
-* `Caracterización <#caracterización>`_: en esta fase se caracteriza la situación y el contexto geográfico, se realiza una revisión histórica, un análisis socio-económico, y se detalla el estado actual de la división y el uso del suelo.
+* Caracterización_: en esta fase se caracteriza la situación y el contexto geográfico, se realiza una revisión histórica, un análisis socio-económico, y se detalla el estado actual de la división y el uso del suelo.
 
-* `Diagnóstico <#diagnóstico>`_: comprende un análisis de los datos e información obtenidos en la fase anterior, tendiente a comprender los procesos de desarrollo y transformación, y las interrelaciones que actúan en el territorio de la ciudad y su entorno, y las fuerzas que operan los mismos.
+* Diagnóstico_: comprende un análisis de los datos e información obtenidos en la fase anterior, tendiente a comprender los procesos de desarrollo y transformación, y las interrelaciones que actúan en el territorio de la ciudad y su entorno, y las fuerzas que operan los mismos.
 
-* `Propuesta de solución <#propuesta-de-solución>`_: aborda el problema de elaboración de la "Ordenanza de Usos y División del suelo".
+* `Propuesta de solución`_: aborda el problema de elaboración de la "Ordenanza de Usos y División del suelo".
 
-* `Anexos <#anexos>`_: incluye información detallada del marco cartográfico utilizado y los prácticos *"Territorio y Ambiente"* y *"Zonificación tipo para una manzana urbana"*.
+* Anexos_: incluye información detallada del marco cartográfico utilizado y los prácticos *"Territorio y Ambiente"* y *"Zonificación tipo para una manzana urbana"*.
 
 Caracterización
 ---------------
@@ -52,8 +52,8 @@ A continuación se muestra una síntesis de las características del Partido de 
 
 .. _baradero-ubic:
 
-.. figure:: img/ubic.png
-   :width: 600 px
+.. figure:: img/ubic.jpg
+   :width: 80 %
    :alt: Ubicación de Baradero
    :align: center
 
@@ -62,8 +62,8 @@ A continuación se muestra una síntesis de las características del Partido de 
 
 .. _baradero-limit:
 
-.. figure:: img/limit.png
-   :width: 600 px
+.. figure:: img/limit.jpg
+   :width: 80 %
    :alt: Límites y entorno de Baradero
    :align: center
 
@@ -202,4 +202,3 @@ Propuesta de solución
 Anexos
 ------
 
-`Anterior capítulo <objetivos.md>`_ - `Top <#desarrollo>`_

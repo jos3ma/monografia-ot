@@ -1,17 +1,14 @@
-=================================================
-Ordenamiento Territorial de la Ciudad de Baradero
-=================================================
+=============
+monografia-ot
+=============
 
-***********************************************************************
-Estudio de crecimiento urbano y necesidades de reserva para su expasión
-***********************************************************************
+::
 
-.. contents:: Contenidos
-   :depth: 3
+    $ pip install rst2pdf
+    $ git clone https://github.com/quijot/monografia-ot.git
+    $ cd monografia-ot
+    $ rst2html monografia.rst > monografia.html
 
-.. include:: intro.rst
+o::
 
-.. include:: objetivos.rst
-
-.. include:: desarrollo.rst
-
+    $ rst2pdf monografia.rst -o monografia.pdf
