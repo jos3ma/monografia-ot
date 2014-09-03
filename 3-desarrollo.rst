@@ -7,7 +7,7 @@ Para el desarrollo del trabajo se han tomado como referencia las siguientes fase
 
 * Diagnóstico_: comprende un análisis de los datos e información obtenidos en la fase anterior, tendiente a comprender los procesos de desarrollo y transformación, y las interrelaciones que actúan en el territorio de la ciudad y su entorno, y las fuerzas que operan los mismos.
 
-* `Propuesta de solución`_: aborda el problema de elaboración de la "Ordenanza de Usos y División del suelo".
+* `Propuesta de solución`_: aborda el problema de elaboración de la propuesta de ordenanza para *Designación de Reservas de Expansión Urbana* y la documentación respaldatoria.
 
 * Anexos_: incluye información detallada del marco cartográfico utilizado y los prácticos *"Territorio y Ambiente"* y *"Zonificación tipo para una manzana urbana"*.
 
