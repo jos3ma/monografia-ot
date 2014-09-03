@@ -4,7 +4,7 @@ Introducción
 Definición de Ordenamiento Territorial
 --------------------------------------
 
-Comencemos por repasar la definición de *Ordenamiento Territorial* (en adelante, indistintamente, OT) del agrimensor Carlos Alberto Bianco[#]_, la cual nos da una idea práctica y cercana al Ordenamiento Territorial de nuestro país, al señalar que:
+Comencemos por repasar la definición de *Ordenamiento Territorial* (en adelante, indistintamente, OT) del agrimensor Carlos Alberto Bianco [#]_, la cual nos da una idea práctica y cercana al Ordenamiento Territorial de nuestro país, al señalar que:
 
     *"... es el conjunto de políticas, leyes y decretos que tienen por objetivo hacer cumplir la función social que tiene la propiedad inmueble, dentro de las garantías y limitaciones que la Constitución Nacional establece, con la finalidad de lograr una racional utilización del territorio."*
 
@@ -19,7 +19,7 @@ Cada Estado tiene su propio sistema de OT, distribuyendo diferentes atribuciones
 El Ordenamiento Territorial en Argentina
 ----------------------------------------
 
-El poder de policía territorial en nuestro país pertenece a las provincias, quienes en la mayoría de los casos mantienen un régimen de aplicación compartido con los municipios y/o comunas. En la Provincia de Buenos Aires rige el Decreto-Ley 8912/77[#]_, que establece el marco de actuación provincial y municipal. Esta ley marco busca imponer ciertas condiciones mínimas al OT y al proceso de ordenación del territorio, y entre los principios que aplica encontramos la *evaluación permanente*, la *participación social* y el *control de la especulación privada*. Se destaca el postulado de *protección del medio ambiente*, que plantea como objetivo la generación de conciencia sobre esta problemática.
+El poder de policía territorial en nuestro país pertenece a las provincias, quienes en la mayoría de los casos mantienen un régimen de aplicación compartido con los municipios y/o comunas. En la Provincia de Buenos Aires rige el Decreto-Ley 8912/77 [#]_, que establece el marco de actuación provincial y municipal. Esta ley marco busca imponer ciertas condiciones mínimas al OT y al proceso de ordenación del territorio, y entre los principios que aplica encontramos la *evaluación permanente*, la *participación social* y el *control de la especulación privada*. Se destaca el postulado de *protección del medio ambiente*, que plantea como objetivo la generación de conciencia sobre esta problemática.
 
 .. [#] `DECRETO-LEY 8912/77: Ley de Ordenamiento Territorial y Uso del Suelo de la Provincia de Buenos Aires <http://www.gob.gba.gov.ar/dijl/DIJL_buscaid.php?var=1444>`_.
 
