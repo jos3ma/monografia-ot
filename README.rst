@@ -11,4 +11,4 @@ monografia-ot
 
 o::
 
-    $ rst2pdf monografia.rst -o monografia.pdf
+    $ ./make-pdf.sh   # genera monografia.pdf
