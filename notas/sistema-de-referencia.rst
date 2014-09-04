@@ -56,33 +56,33 @@ A continuación, un listado de los SRS encontrados o citados en las bases de dat
 
 - EPSG:32621 - WGS 84 / UTM zone 21N
 
-+proj=utm +zone=21 +ellps=WGS84 +datum=WGS84 +units=m +no_defs 
+  +proj=utm +zone=21 +ellps=WGS84 +datum=WGS84 +units=m +no_defs 
 
-PROJCS["WGS 84 / UTM zone 21N",GEOGCS["WGS 84",DATUM["WGS_1984",SPHEROID["WGS 84",6378137,298.257223563,AUTHORITY["EPSG","7030"]],AUTHORITY["EPSG","6326"]],PRIMEM["Greenwich",0,AUTHORITY["EPSG","8901"]],UNIT["degree",0.01745329251994328,AUTHORITY["EPSG","9122"]],AUTHORITY["EPSG","4326"]],UNIT["metre",1,AUTHORITY["EPSG","9001"]],PROJECTION["Transverse_Mercator"],PARAMETER["latitude_of_origin",0],PARAMETER["central_meridian",-57],PARAMETER["scale_factor",0.9996],PARAMETER["false_easting",500000],PARAMETER["false_northing",0],AUTHORITY["EPSG","32621"],AXIS["Easting",EAST],AXIS["Northing",NORTH]]
+  PROJCS["WGS 84 / UTM zone 21N",GEOGCS["WGS 84",DATUM["WGS_1984",SPHEROID["WGS 84",6378137,298.257223563,AUTHORITY["EPSG","7030"]],AUTHORITY["EPSG","6326"]],PRIMEM["Greenwich",0,AUTHORITY["EPSG","8901"]],UNIT["degree",0.01745329251994328,AUTHORITY["EPSG","9122"]],AUTHORITY["EPSG","4326"]],UNIT["metre",1,AUTHORITY["EPSG","9001"]],PROJECTION["Transverse_Mercator"],PARAMETER["latitude_of_origin",0],PARAMETER["central_meridian",-57],PARAMETER["scale_factor",0.9996],PARAMETER["false_easting",500000],PARAMETER["false_northing",0],AUTHORITY["EPSG","32621"],AXIS["Easting",EAST],AXIS["Northing",NORTH]]
 
 - EPSG:32721 - WGS 84 / UTM zone 21S
 
-+proj=utm +zone=21 +south +ellps=WGS84 +datum=WGS84 +units=m +no_defs 
+  +proj=utm +zone=21 +south +ellps=WGS84 +datum=WGS84 +units=m +no_defs 
 
-PROJCS["WGS 84 / UTM zone 21S",GEOGCS["WGS 84",DATUM["WGS_1984",SPHEROID["WGS 84",6378137,298.257223563,AUTHORITY["EPSG","7030"]],AUTHORITY["EPSG","6326"]],PRIMEM["Greenwich",0,AUTHORITY["EPSG","8901"]],UNIT["degree",0.01745329251994328,AUTHORITY["EPSG","9122"]],AUTHORITY["EPSG","4326"]],UNIT["metre",1,AUTHORITY["EPSG","9001"]],PROJECTION["Transverse_Mercator"],PARAMETER["latitude_of_origin",0],PARAMETER["central_meridian",-57],PARAMETER["scale_factor",0.9996],PARAMETER["false_easting",500000],PARAMETER["false_northing",10000000],AUTHORITY["EPSG","32721"],AXIS["Easting",EAST],AXIS["Northing",NORTH]]
+  PROJCS["WGS 84 / UTM zone 21S",GEOGCS["WGS 84",DATUM["WGS_1984",SPHEROID["WGS 84",6378137,298.257223563,AUTHORITY["EPSG","7030"]],AUTHORITY["EPSG","6326"]],PRIMEM["Greenwich",0,AUTHORITY["EPSG","8901"]],UNIT["degree",0.01745329251994328,AUTHORITY["EPSG","9122"]],AUTHORITY["EPSG","4326"]],UNIT["metre",1,AUTHORITY["EPSG","9001"]],PROJECTION["Transverse_Mercator"],PARAMETER["latitude_of_origin",0],PARAMETER["central_meridian",-57],PARAMETER["scale_factor",0.9996],PARAMETER["false_easting",500000],PARAMETER["false_northing",10000000],AUTHORITY["EPSG","32721"],AXIS["Easting",EAST],AXIS["Northing",NORTH]]
 
 - EPSG:92720 - Proyección Equivalente a "EPSG:32720 - WGS 84 / UTM zone 20S". Esta proyección fue agregada porque al usar la EPSG:32721 que viene definida en el archivo epsg, los resultados no eran los esperados. (Creo que este se había usado para datos de Lincoln; verificar y eliminar)
 
-+proj=tmerc +lat_0=0 +lon_0=-63.0 +k=0.9996 +x_0=500000 +y_0=10000000 +north +ellps=WGS84 +datum=WGS84 +units=m +no_defs
+  +proj=tmerc +lat_0=0 +lon_0=-63.0 +k=0.9996 +x_0=500000 +y_0=10000000 +north +ellps=WGS84 +datum=WGS84 +units=m +no_defs
 
 - EPSG:92721 - Proyección Equivalente a "EPSG:32721 - WGS 84 / UTM zone 21S". Esta proyección fue agregada porque al usar la EPSG:32721 que viene definida en el archivo epsg, los resultados no eran los esperados.
 
-+proj=tmerc +lat_0=0 +lon_0=-57.0 +k=0.9996 +x_0=500000 +y_0=10000000 +ellps=WGS84 +datum=WGS84 +units=m +no_defs
+  +proj=tmerc +lat_0=0 +lon_0=-57.0 +k=0.9996 +x_0=500000 +y_0=10000000 +ellps=WGS84 +datum=WGS84 +units=m +no_defs
 
-ATENCIÓN: aparentemente el SRS EPSG:92721 estaba mal configurado (false_northing; corregido de 0 a 10000000). Tal vez esto tiene que ver con algunos errores de superposición de capas de distinto SRS de origen al intentar combinarlas en EPSG:32721 (UTM 21S) y que dieron lugar a la creación del EPSG:92721. En un primer momento se pensó que tal vez había algún problema o error (bug) relacionado al uso del SRS EPSG:32721, y eso motivó el agregado de esa misma proyección manualmente, para evitar usar la que viene incluída en el programa de cálculo geodésico proj4. Como esa prueba dió resultado positivo, pensamos que la posibilidad de encontrarnos ante un bug era cierta. Ahora conviene revisar esta situación ya que se pudo haber tratado de un manejo incorrecto de los datos.
+  ATENCIÓN: aparentemente el SRS EPSG:92721 estaba mal configurado (false_northing; corregido de 0 a 10000000). Tal vez esto tiene que ver con algunos errores de superposición de capas de distinto SRS de origen al intentar combinarlas en EPSG:32721 (UTM 21S) y que dieron lugar a la creación del EPSG:92721. En un primer momento se pensó que tal vez había algún problema o error (bug) relacionado al uso del SRS EPSG:32721, y eso motivó el agregado de esa misma proyección manualmente, para evitar usar la que viene incluída en el programa de cálculo geodésico proj4. Como esa prueba dió resultado positivo, pensamos que la posibilidad de encontrarnos ante un bug era cierta. Ahora conviene revisar esta situación ya que se pudo haber tratado de un manejo incorrecto de los datos.
 
 - EPSG:98765 - Local. El meridiano central corresponde a un punto intermedio entre las ciudades de Baradero y Lincoln. Es el SRS que se iba a usar en el trabajo anterior. Hay algunos conjuntos de datos usando este SRS.
 
-+proj=tmerc +lat_0=-34.5 +lon_0=-60.5 +k=0.9996 +x_0=500000 +y_0=500000 +ellps=WGS84 +datum=WGS84 +units=m +no_defs
+  +proj=tmerc +lat_0=-34.5 +lon_0=-60.5 +k=0.9996 +x_0=500000 +y_0=500000 +ellps=WGS84 +datum=WGS84 +units=m +no_defs
 
 - EPSG:5347 - POSGAR 2007 / Argentina Faja 5
 
-+proj=tmerc +lat_0=-90 +lon_0=-60 +k=1 +x_0=5500000 +y_0=0 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=m +no_defs  <>
+  +proj=tmerc +lat_0=-90 +lon_0=-60 +k=1 +x_0=5500000 +y_0=0 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=m +no_defs  <>
 
 **Ejemplos**
 
