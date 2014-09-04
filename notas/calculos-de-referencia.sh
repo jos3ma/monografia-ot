@@ -15,8 +15,8 @@ EOF
 
 # SRS Personalizado: epsg:98766
 
-echo "epsg:98765 - SRS Local - Partido de Baradero"
-proj +proj=tmerc +lat_0=- +lon_0=- +k=0.9996 +x_0=500000 +y_0=500000 +ellps=WGS84 +datum=WGS84 +units=m +no_defs -r <<EOF
+echo "epsg:98766 - SRS Local - Partido de Baradero"
+proj +proj=tmerc +lat_0=-34.0 +lon_0=-59.5 +k=0.9996 +x_0=100000 +y_0=100000 +ellps=WGS84 +datum=WGS84 +units=m +no_defs -r <<EOF
 $LAT $LON
 EOF
 

@@ -1,18 +1,58 @@
-Organizando los datos espaciales se ha encontrado cartografía en distintos sistemas de referencia. Algunos de estos SRS están citados por errores o confusiones, y la base de datos debe depurarse para conservar solamente los SRS necesarios.  
+***Sistema de Referencia Espacial (SRS)***
 
 El SRS elegido para realizar el trabajo es un sistema local al que, para uso propio, le asignamos el código epsg:98766. Es una proyección Gauss Kruger con centro en Baradero y coordenadas positivas en el área de trabajo:
 
-- EPSG:98766 - Local. El meridiano central corresponde al area de la Ciudad y las coordenadas resultan positivas en toda la extensión del partido.
+Organizando los datos espaciales se ha encontrado cartografía en distintos sistemas de referencia. Algunos de estos SRS están citados por errores o confusiones, y la base de datos debe depurarse para conservar solamente los SRS necesarios. Todos los conjuntos de datos que sean inventariados en el proceso de organización de datos serán convertidos a uno de estos sistemas de referencia, es decir a epsg:4326 o epsg:9876.
 
-Determinar parámetros en base a centro geométrico del departamento Baradero y su extensión, de manera que las coordenadas sean siempre positivas:
+El almacenamiento de los datos se realizará preferiblemente en el SRS Local o en coordenadas geográficas referidas al sistema WGS 84 si por alguna circunstancia fuese más conveniente.
 
-+proj=tmerc +lat_0=-XX.X +lon_0=-XX.XX +k=0.9996 +x_0=500000? +y_0=500000? +ellps=WGS84 +datum=WGS84 +units=m +no_defs
+***Elección del SRS Local***
 
-El almacenamiento de los datos se realizará preferiblemente en el SRS Local o en coordenadas geográficas referidas al sistema WGS 84 su fuese necesario.
+Los parámetros de la definición del SRS Local se harán en base al centroide del polígono límite del departamento Baradero y su extensión, de manera que las coordenadas sean siempre positivas.
 
-Todos los conjuntos de datos que sean inventariados en el proceso de organización de datos serán convertidos a uno de estos sistemas de referencia, es decir a epsg:4326 o epsg:9876.
+Para determinar el centroide del polígono que representa los límites del Partido de Baradero:
 
-A continuación, el listado de los SRS encontrados o citados en las bases de datos exploradas:
+Se puede hacer con la calculadora de campos de QGIS. La expresión correspondiente es:
+
+geomToWKT(centroid($geometry))
+
+Se obtuvieron los siguientes valores:
+
+-33.93378 ; -59.49449
+
+Ahora debemos calcular la extensión del area de interés, a los fines de elegir parámetros que permitan trabajar con coordenadas positivas.
+Para ello proyectamos el shape en el que hemos aislado el polígono de trabajo en un SRS auxiliar. El SRS auxiliar es el mismo SRS Local que vamos a usar en el trabajo, sólo que los valores de falso este y falso norte están igualados a cero, con lo cual tendremos coordenadas positivas y negativas:
+
+/usr/bin/ogr2ogr -f "ESRI Shapefile" departamento-baradero-poligono_srs-auxiliar.shp /archivos/ot/datos-espaciales/departamento-baradero-poligono.shp -t_srs "+proj=tmerc +lat_0=-34.0 +lon_0=-59.5 +k=0.9996 +x_0=0 +y_0=0 +ellps=WGS84 +datum=WGS84 +units=m +no_defs" -s_srs "EPSG:4326"
+
+Y el resúmen de la geometría proyectada se obtiene de la siguiente manera:
+
+ogrinfo departamento-baradero-poligono_srs-auxiliar.shp -al -so
+
+Extent: (-24176.510339, -19242.379560) - (30306.610371, 38895.129366)
+
+Calculamos la extensión con una simple calculadora, bc:
+
+30306.610371+24176.510339
+54483.120710
+38895.129366+19242.379560
+58137.508926
+
+Se puede deducir que con un valor de 50000 unidades se puede garantizar que toda la extensión del partido tendrá coordenadas positivas. Para asegurar además un margen que permita obtener coordenadas positivas en una extensión regional, elegimos el valor 100000. El SRS Local finalmente queda como:
+
+<98766> +proj=tmerc +lat_0=-34.0 +lon_0=-59.5 +k=0.9996 +x_0=100000 +y_0=100000 +ellps=WGS84 +datum=WGS84 +units=m +no_defs <> 
+
+Para revisar los valores elegidos y probar la configuración actualizada de proj4, nuevamente proyectamos la geometría límite del departamente, esta vez desde las coordenadas geográficas al SRS Local definitivo y calculamos su extensión, que en este caso equivale a imprimir un sumario de la geometría del shape:
+
+/usr/bin/ogr2ogr -f "ESRI Shapefile" departamento-baradero-poligono_srs-local.shp /archivos/ot/datos-espaciales/departamento-baradero-poligono.shp -t_srs "EPSG:98766" -s_srs "EPSG:4326"
+
+ogrinfo   -al departamento-baradero-poligono_srs-local.shp -geom=SUMMARY
+
+Extent: (75823.489661, 80757.620440) - (130306.610371, 138895.129366)
+
+**SRS encontrados**
+
+A continuación, un listado de los SRS encontrados o citados en las bases de datos exploradas. Este listado se arma con el objetivo de tener como referencia esta información que puede ser necesaria para identificar el SRS en el que se encuentra un determinado conjunto de datos y para reproyectarlo al SRS Local:
 
 - EPSG:32621 - WGS 84 / UTM zone 21N
 
@@ -44,7 +84,7 @@ ATENCIÓN: aparentemente el SRS EPSG:92721 estaba mal configurado (false_northin
 
 +proj=tmerc +lat_0=-90 +lon_0=-60 +k=1 +x_0=5500000 +y_0=0 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=m +no_defs  <>
 
-Ejemplos
+**Ejemplos**
 
 Para tener algunos valores de referencia vamos a calcular las coordenadas de la Ciudad de Baradero en los distintos sistemas de referencia. Esto podemos hacerlo usando el programa proj.
 
@@ -63,6 +103,9 @@ WGS84
 
 epsg:98765 - SRS Local Baradero - Lincoln
 590643.55   577551.53
+
+epsg:98766 - SRS Local - Partido de Baradero
+98074.60    122540.93
 
 epsg:32721 - UTM21S
 266627.55   6257528.40
