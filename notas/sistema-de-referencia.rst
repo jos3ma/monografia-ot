@@ -92,7 +92,7 @@ La idea de tener estos valores es la de compararlos con las coordenadas promedio
 
 Ciudad de Baradero: Latitud : -33.7967 Longitud : -59.5208
 
-Transformar esas coordenadas a coordenadas planas:
+Transformar a coordenadas planas en los distintos SRS usados en los conjuntos de datos explorados y en el SRS Local:
 
 # Ver calculos-de-referencia.sh
 
@@ -102,7 +102,7 @@ WGS84:
 
 -33.7967 -59.5208
 
-epsg:98765 - SRS Local Baradero - Lincoln:
+epsg:98765 - SRS Local Baradero / Lincoln:
 
 590643.55   577551.53
 
