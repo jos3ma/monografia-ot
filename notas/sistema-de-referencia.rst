@@ -98,16 +98,20 @@ Transformar esas coordenadas a coordenadas planas:
 
 # Salida:
 
-WGS84
+WGS84:
+
 -33.7967 -59.5208
 
-epsg:98765 - SRS Local Baradero - Lincoln
+epsg:98765 - SRS Local Baradero - Lincoln:
+
 590643.55   577551.53
 
-epsg:98766 - SRS Local - Partido de Baradero
+epsg:98766 - SRS Local - Partido de Baradero:
+
 98074.60    122540.93
 
-epsg:32721 - UTM21S
+epsg:32721 - UTM21S:
+
 266627.55   6257528.40
 
 
