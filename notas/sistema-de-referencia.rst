@@ -54,35 +54,31 @@ Extent: (75823.489661, 80757.620440) - (130306.610371, 138895.129366)
 
 A continuación, un listado de los SRS encontrados o citados en las bases de datos exploradas. Este listado se arma con el objetivo de tener como referencia esta información que puede ser necesaria para identificar el SRS en el que se encuentra un determinado conjunto de datos y para reproyectarlo al SRS Local:
 
-- EPSG:32621 - WGS 84 / UTM zone 21N
+- EPSG:32621 - WGS 84 / UTM zone 21N: es posible que este SRS haya sido usado por error en algún conjunto de datos. Una vez re-proyectados estos conjuntos de datos, puede eliminarse esta referencia.
 
   +proj=utm +zone=21 +ellps=WGS84 +datum=WGS84 +units=m +no_defs 
 
-  PROJCS["WGS 84 / UTM zone 21N",GEOGCS["WGS 84",DATUM["WGS_1984",SPHEROID["WGS 84",6378137,298.257223563,AUTHORITY["EPSG","7030"]],AUTHORITY["EPSG","6326"]],PRIMEM["Greenwich",0,AUTHORITY["EPSG","8901"]],UNIT["degree",0.01745329251994328,AUTHORITY["EPSG","9122"]],AUTHORITY["EPSG","4326"]],UNIT["metre",1,AUTHORITY["EPSG","9001"]],PROJECTION["Transverse_Mercator"],PARAMETER["latitude_of_origin",0],PARAMETER["central_meridian",-57],PARAMETER["scale_factor",0.9996],PARAMETER["false_easting",500000],PARAMETER["false_northing",0],AUTHORITY["EPSG","32621"],AXIS["Easting",EAST],AXIS["Northing",NORTH]]
-
-- EPSG:32721 - WGS 84 / UTM zone 21S
+- EPSG:32721 - WGS 84 / UTM zone 21S: este es el SRS que se iba a utilizar originalmente. Una vez re-proyectados estos conjuntos de datos, puede eliminarse esta referencia.
 
   +proj=utm +zone=21 +south +ellps=WGS84 +datum=WGS84 +units=m +no_defs 
 
-  PROJCS["WGS 84 / UTM zone 21S",GEOGCS["WGS 84",DATUM["WGS_1984",SPHEROID["WGS 84",6378137,298.257223563,AUTHORITY["EPSG","7030"]],AUTHORITY["EPSG","6326"]],PRIMEM["Greenwich",0,AUTHORITY["EPSG","8901"]],UNIT["degree",0.01745329251994328,AUTHORITY["EPSG","9122"]],AUTHORITY["EPSG","4326"]],UNIT["metre",1,AUTHORITY["EPSG","9001"]],PROJECTION["Transverse_Mercator"],PARAMETER["latitude_of_origin",0],PARAMETER["central_meridian",-57],PARAMETER["scale_factor",0.9996],PARAMETER["false_easting",500000],PARAMETER["false_northing",10000000],AUTHORITY["EPSG","32721"],AXIS["Easting",EAST],AXIS["Northing",NORTH]]
-
-- EPSG:92720 - Proyección Equivalente a "EPSG:32720 - WGS 84 / UTM zone 20S". Esta proyección fue agregada porque al usar la EPSG:32721 que viene definida en el archivo epsg, los resultados no eran los esperados. (Creo que este se había usado para datos de Lincoln; verificar y eliminar)
+- EPSG:92720 (equivalente a "EPSG:32720 - WGS 84 / UTM zone 20S"): agregada porque al usar la EPSG:32720 que viene definida en el archivo epsg, los resultados no eran los esperados. Se había usado para datos de Lincoln así que probablemente no se utilice en el proceso de organización de los datos (eliminar la referencia al terminar).
 
   +proj=tmerc +lat_0=0 +lon_0=-63.0 +k=0.9996 +x_0=500000 +y_0=10000000 +north +ellps=WGS84 +datum=WGS84 +units=m +no_defs
 
-- EPSG:92721 - Proyección Equivalente a "EPSG:32721 - WGS 84 / UTM zone 21S". Esta proyección fue agregada porque al usar la EPSG:32721 que viene definida en el archivo epsg, los resultados no eran los esperados.
+- EPSG:92721 (equivalente a "EPSG:32721 - WGS 84 / UTM zone 21S"): agregada porque al usar la EPSG:32721 que viene definida en el archivo epsg, los resultados no eran los esperados.
 
   +proj=tmerc +lat_0=0 +lon_0=-57.0 +k=0.9996 +x_0=500000 +y_0=10000000 +ellps=WGS84 +datum=WGS84 +units=m +no_defs
 
-  ATENCIÓN: aparentemente el SRS EPSG:92721 estaba mal configurado (false_northing; corregido de 0 a 10000000). Tal vez esto tiene que ver con algunos errores de superposición de capas de distinto SRS de origen al intentar combinarlas en EPSG:32721 (UTM 21S) y que dieron lugar a la creación del EPSG:92721. En un primer momento se pensó que tal vez había algún problema o error (bug) relacionado al uso del SRS EPSG:32721, y eso motivó el agregado de esa misma proyección manualmente, para evitar usar la que viene incluída en el programa de cálculo geodésico proj4. Como esa prueba dió resultado positivo, pensamos que la posibilidad de encontrarnos ante un bug era cierta. Ahora conviene revisar esta situación ya que se pudo haber tratado de un manejo incorrecto de los datos.
+``Acerca de las diferencias que motivaron el uso de los epsg 92720 y 92721: aparentemente estaban mal configurados (false_northing; corregido de 0 a 10000000). Tal vez esto tiene que ver los errores de superposición de capas de distinto SRS de origen y que dieron lugar al uso de SRS personalizados para reemplazar las definiciones del sistema UTM internas de proj4 . En un primer momento se pensó que había algún error relacionado al uso de esas definiciones de UTM (de códigos 32720 y 32721) y eso motivó el agregado manual de SRS equivalentes. Como esa prueba dió resultado positivo, pensamos que la posibilidad de encontrarnos ante un bug era cierta. Ahora los cálculos coinciden, así que estas diferencias correspondieron a un manejo incorrecto de los datos, o bien si se trataba de un error el mismo ya no se produce.``
 
-- EPSG:98765 - Local. El meridiano central corresponde a un punto intermedio entre las ciudades de Baradero y Lincoln. Es el SRS que se iba a usar en el trabajo anterior. Hay algunos conjuntos de datos usando este SRS.
+- EPSG:98765 - Local - Partidos de Baradero y Lincoln: el meridiano central corresponde a un punto intermedio entre las ciudades de Baradero y Lincoln. Es el SRS que se iba a usar en el trabajo anterior. Hay algunos conjuntos de datos usando este SRS, los cuales serán convertidos al "SRS Local - Partido de Baradero".
 
   +proj=tmerc +lat_0=-34.5 +lon_0=-60.5 +k=0.9996 +x_0=500000 +y_0=500000 +ellps=WGS84 +datum=WGS84 +units=m +no_defs
 
-- EPSG:5347 - POSGAR 2007 / Argentina Faja 5
+- EPSG:22185 - POSGAR 94 / Argentina Faja 5: es el SRS oficial de la cartografía nacional que corresponde a la región del Partido de Baradero.
 
-  +proj=tmerc +lat_0=-90 +lon_0=-60 +k=1 +x_0=5500000 +y_0=0 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=m +no_defs  <>
+  +proj=tmerc +lat_0=-90 +lon_0=-60 +k=1 +x_0=5500000 +y_0=0 +ellps=WGS84 +towgs84=0,0,0,0,0,0,0 +units=m +no_defs
 
 **Ejemplos**
 
